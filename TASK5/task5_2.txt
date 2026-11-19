@@ -1,0 +1,19 @@
+**Organization 1 – Single Script**
+
+All code is written in a single file. It is easy to execute but difficult to maintain as the program grows.
+
+**Organization 2 – One Module**
+
+The program separates reusable functions from the main program. It improves reusability and readability.
+
+**Organization 3 – Three Modules**
+
+The program separates file handling, attendance calculations, and execution. It improves organization and makes maintenance easier.
+
+**Organization 4 – Package Structure**
+
+The program uses a package with multiple modules. It provides better scalability, organization, reusability, and maintenance.
+
+**Conclusion:**
+
+A package structure is more suitable for large projects because it separates functionality into independent modules. A single script is suitable for small and simple programs.

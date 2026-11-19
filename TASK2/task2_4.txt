@@ -1,0 +1,25 @@
+**Task 2.4 – Trace**
+
+Consider the following attendance file:
+
+```text
+192311001,2026-10-08,P
+192311002,2026-10-08,A
+192311003,2026-10-08
+```
+
+**Processing:**
+
+| Register Number | Status | Result |
+|---|---|---|
+| 192311001 | P | Present count = 1 |
+| 192311002 | A | Absent count = 1 |
+| 192311003 | Damaged line | Recorded in error log |
+
+**Final Result:**
+
+- Student 192311001: 1 Present, 0 Absent
+- Student 192311002: 0 Present, 1 Absent
+- Student 192311003: Rejected due to missing field
+
+The damaged line is recorded in the error log with its file name and line number.

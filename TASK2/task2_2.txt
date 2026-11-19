@@ -1,0 +1,14 @@
+**Task 2.2 – Design the File Operations**
+
+- **r (Read mode):** Used to read daily attendance files.
+- **w (Write mode):** Used to create or overwrite attendance reports and below-75% reports.
+- **a (Append mode):** Used to append error records to the error log.
+
+- **Encoding:** UTF-8 is used to support consistent text reading and writing.
+
+- **read():** Can be used to read the entire file when the file is small.
+- **readline():** Reads one line at a time.
+- **Iteration:** Used to process each attendance record efficiently.
+- **write():** Used to write attendance reports, student lists and error logs.
+
+Line-by-line iteration is preferred for large attendance files because it reduces memory usage.

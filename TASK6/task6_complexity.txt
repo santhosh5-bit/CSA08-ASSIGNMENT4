@@ -1,0 +1,11 @@
+**Time Complexity:**
+
+The program reads and processes each registration record once. Duplicate checking using a set takes approximately O(1) per record on average. Therefore, the overall processing time is O(n), where n is the total number of records.
+
+**Space Complexity:**
+
+The program stores valid records, department-wise records, and register numbers in memory. Therefore, the space complexity is O(n).
+
+**Conclusion:**
+
+Using a set helps detect duplicate register numbers efficiently. File handling, validation, exception handling, and report generation improve the reliability of the registration system.

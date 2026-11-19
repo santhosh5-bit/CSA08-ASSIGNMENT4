@@ -1,0 +1,18 @@
+**Task 3.2 – Design a Custom Exception**
+
+A custom exception named `InvalidRecord` is created to identify invalid attendance records.
+
+```python
+class InvalidRecord(Exception):
+    """Raised when an attendance record is invalid."""
+```
+
+**Where it is raised:**
+
+It is raised inside the `parse_line()` function when the record contains an incorrect number of fields or an invalid attendance status.
+
+**Where it is handled:**
+
+It is handled inside the `summarise()` function using a try-except block. Invalid records are recorded in the error list instead of stopping the program.
+
+This improves the reliability and readability of the attendance processor.

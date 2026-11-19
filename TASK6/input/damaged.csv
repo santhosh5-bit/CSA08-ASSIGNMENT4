@@ -1,0 +1,6 @@
+RegisterNumber,Name,Email,Department
+192311016,Sam,sam@gmail.com,CSE
+192311017,Test,testgmail.com,ECE
+192311018,Invalid,invalid@gmail.com,IT
+192311001,Duplicate,duplicate@gmail.com,CSE
+192311019,MissingFields

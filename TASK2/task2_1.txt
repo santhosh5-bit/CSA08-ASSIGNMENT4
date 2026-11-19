@@ -1,0 +1,36 @@
+**Task 2.1 – Model the Data**
+
+**Input File Format:**
+
+Each daily attendance file contains one record per line in the following format:
+
+`RegisterNumber,Date,Status`
+
+Example:
+```text
+192311001,2026-10-08,P
+192311002,2026-10-08,A
+192311003,2026-10-08,P
+```
+
+P indicates Present and A indicates Absent.
+
+**Data Structures:**
+
+A dictionary is used to store attendance information for each student.
+
+Example:
+```python
+attendance = {
+    "192311001": {"present": 10, "absent": 2},
+    "192311002": {"present": 8, "absent": 4}
+}
+```
+
+A list is used to store damaged lines along with the file name and line number.
+
+**Output Files:**
+
+1. `attendance_report.txt` – Contains register numbers and attendance percentages.
+2. `below_75.txt` – Contains students whose attendance is below 75%.
+3. `error_log.txt` – Contains damaged lines, file names and line numbers.

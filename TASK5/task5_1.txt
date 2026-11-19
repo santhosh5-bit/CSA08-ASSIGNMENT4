@@ -1,0 +1,15 @@
+**Organization 1 – Single Script**
+
+All functions and program logic are written in one Python file. This structure is simple to execute but becomes difficult to maintain as the program grows.
+
+**Organization 2 – One Module**
+
+The program is divided into a main file and a separate module. The module contains reusable functions, while the main file handles execution.
+
+**Organization 3 – Three Modules**
+
+The program is divided into three modules: file handling, attendance processing, and report generation. This improves code organization and reusability.
+
+**Organization 4 – Package Structure**
+
+The program is organized into a package containing multiple modules. This structure supports modularity, maintenance, scalability, and reuse.

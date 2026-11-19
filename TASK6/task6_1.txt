@@ -1,0 +1,40 @@
+**System Name:** Department Event Registration Processing System
+
+**Objective:**
+
+To develop a Python system that processes participant registration records from multiple department files, validates data, handles errors, removes duplicate registrations, and generates organized output reports.
+
+**Input:**
+
+Registration files containing:
+- Register Number
+- Name
+- Email
+- Department
+
+**Processing:**
+
+1. Read registration records from multiple files.
+2. Validate the fields in each record.
+3. Detect duplicate register numbers.
+4. Reject invalid email addresses.
+5. Handle missing files and corrupted records.
+6. Store valid records in a master file.
+7. Generate department-wise participant files.
+8. Generate a summary report.
+9. Maintain an error log.
+
+**Output Files:**
+
+- `master.csv` – All valid unique registrations.
+- `department_reports/` – Department-wise participant files.
+- `summary.txt` – Registration summary.
+- `error_log.txt` – Invalid and rejected records.
+
+**Exception Handling:**
+
+The system handles FileNotFoundError, ValueError, and invalid record errors without stopping the entire processing operation.
+
+**Expected Outcome:**
+
+A reliable registration processing system that manages multiple files, validates records, prevents duplicate entries, generates reports, and maintains error logs.

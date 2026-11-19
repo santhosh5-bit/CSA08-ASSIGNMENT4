@@ -1,0 +1,12 @@
+**Task 3.1 – Identify the Failures**
+
+| Failure | Exception | Reason |
+|---|---|---|
+| Missing folder | FileNotFoundError | The required folder or file does not exist. |
+| Missing file | FileNotFoundError | The program cannot locate the attendance file. |
+| Permission denied | PermissionError | The program does not have permission to access the file. |
+| Wrong encoding | UnicodeDecodeError | The file contains characters that cannot be decoded using the selected encoding. |
+| Damaged line | ValueError / InvalidRecord | The record contains invalid data or an incorrect status. |
+| Missing fields | IndexError / InvalidRecord | The record does not contain the required fields. |
+| Empty file | No exception necessarily | The file contains no records to process. |
+| Invalid status | InvalidRecord | The status is not P or A. |

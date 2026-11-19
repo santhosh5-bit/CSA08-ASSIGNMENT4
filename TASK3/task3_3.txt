@@ -1,0 +1,30 @@
+**Task 3.3 – Use the Complete try Statement**
+
+The complete try statement includes `try`, specific `except` blocks, `else` and `finally`.
+
+```python
+try:
+    with open("attendance.txt", "r", encoding="utf-8") as f:
+        data = f.read()
+
+except FileNotFoundError as e:
+    raise RuntimeError("Attendance file not found") from e
+
+except PermissionError as e:
+    raise RuntimeError("Permission denied") from e
+
+except UnicodeDecodeError as e:
+    raise RuntimeError("Encoding error") from e
+
+else:
+    print("File read successfully")
+
+finally:
+    print("Processing completed")
+```
+
+- **try:** Contains the code that may produce errors.
+- **except:** Handles specific errors.
+- **else:** Executes when no exception occurs.
+- **finally:** Executes whether an exception occurs or not.
+- **raise ... from ...:** Preserves the original exception as the cause of the new exception.

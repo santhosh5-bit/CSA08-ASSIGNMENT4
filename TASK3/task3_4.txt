@@ -1,0 +1,16 @@
+**Task 3.4 – Misuse Experiment**
+
+When the specific exception handlers are replaced with:
+
+```python
+except Exception:
+    pass
+```
+
+and a typing error is introduced into a variable name, the program silently ignores the error and continues without displaying any message.
+
+For example, if `present` is mistakenly written as `presnt`, a NameError may occur. The bare exception handler catches the error and hides it.
+
+**Explanation:**
+
+Using `except Exception: pass` hides unexpected errors, making debugging difficult. Specific exception handling is better because it helps identify and handle errors correctly.

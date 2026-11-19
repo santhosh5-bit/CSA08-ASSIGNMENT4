@@ -1,0 +1,16 @@
+**Alternative Concept:**
+
+Instead of reading all daily attendance files once and accumulating attendance counts in a dictionary, the program could re-read all daily files separately for each student to calculate attendance.
+
+**Time Complexity:**
+
+- Re-reading files for every student: O(s × f × l)
+- Reading files once and accumulating counts: O(f × l)
+
+Here, s represents the number of students, f represents the number of files and l represents the number of lines per file.
+
+**Space Complexity:**
+
+The dictionary-based approach requires space to store attendance counts for students and rejected records. Re-reading the files separately for each student reduces the need to maintain accumulated attendance data but increases processing time.
+
+Reading all files once and using a dictionary is more efficient because it avoids repeated file scanning.

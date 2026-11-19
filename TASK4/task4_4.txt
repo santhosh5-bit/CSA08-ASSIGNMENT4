@@ -1,0 +1,3 @@
+1. Use the `with` statement to automatically close files and prevent resource leaks.
+
+2. Use append mode (`a`) for log files and add newline characters (`\n`) to separate records properly.

@@ -1,0 +1,11 @@
+**Time Complexity:**
+
+The program processes each book record once. Therefore, the time complexity is O(n), where n is the number of book records.
+
+**Space Complexity:**
+
+The program uses O(n) space to store the book records read from the input file.
+
+**Comparison:**
+
+Using `with` automatically closes the file, while manual file closing requires explicit close operations. Both methods have similar time complexity, but `with` provides safer and cleaner file management.

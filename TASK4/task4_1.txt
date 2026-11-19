@@ -1,0 +1,9 @@
+**Task 4.1 – Locate the Defects**
+
+1. **Earlier days are lost:** The program opens the log file using `"w"` mode. This overwrites the previous contents every time the function runs.
+
+2. **Books are joined together:** The program uses `log.write(b)` without adding a newline character. Therefore, book names may appear together on the same line.
+
+3. **File may remain open after an error:** If `write()` raises an exception, the file may not be closed properly because the program uses manual file handling without a with statement or finally block.
+
+These defects cause data loss, poor log readability and improper resource management.

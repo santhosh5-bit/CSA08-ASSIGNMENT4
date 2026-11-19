@@ -1,0 +1,17 @@
+**Task 1.1 – Diagnose the Script**
+
+1. **Hard-coded file path:** The script uses a fixed file path. If the file location changes, the program will fail with a FileNotFoundError.
+
+2. **File is not closed:** The file is opened without a proper closing mechanism. This may waste system resources.
+
+3. **Reads the entire file:** The read() method loads the complete file into memory. This may consume excessive memory when processing large files.
+
+4. **Bare except with pass:** It hides all errors without displaying any information. This makes debugging difficult.
+
+5. **Integer conversion:** Using int() cannot process decimal amounts such as 1250.50. It may raise a ValueError.
+
+6. **Repeated string concatenation:** Repeatedly adding strings to build the report may be inefficient for large datasets.
+
+7. **Empty lines:** The last empty line may cause an IndexError because the program tries to access missing fields.
+
+8. **No rejected-line record:** Invalid lines are silently ignored, so the office cannot identify or correct damaged records.

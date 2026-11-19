@@ -1,0 +1,14 @@
+**Alternative Concept:**
+
+Instead of reading the file line by line, the program could use `f.read()` or `f.readlines()` to load all the file contents into memory and then process them.
+
+**Time Complexity:**
+
+Both approaches have O(n) time complexity because every line is processed once.
+
+**Space Complexity:**
+
+- `f.read()` or `f.readlines()` requires O(file size) memory because the entire file is loaded into memory.
+- Line-by-line processing requires O(one line) additional memory for reading, making it more memory-efficient for large files.
+
+For a file containing 50,000 lines, line-by-line processing is preferable because it avoids loading the entire file into memory at once.

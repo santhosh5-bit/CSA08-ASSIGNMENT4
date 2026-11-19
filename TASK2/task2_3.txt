@@ -1,0 +1,43 @@
+**Task 2.3 – Design the Processing**
+
+**Pseudocode: Monthly Attendance Processing**
+
+```text
+BEGIN
+
+    Initialize attendance dictionary
+    Initialize rejected_lines list
+
+    List all daily attendance files using pathlib
+
+    FOR each file in daily files:
+        Open file in read mode
+
+        FOR each line in file:
+            Split line into register number, date and status
+
+            IF record is invalid:
+                Add file name and line number to rejected_lines
+            ELSE:
+                IF student not in attendance dictionary:
+                    Initialize present and absent counts
+
+                IF status is P:
+                    Increase present count
+                ELSE:
+                    Increase absent count
+
+        Close file
+
+    FOR each student:
+        Calculate attendance percentage
+
+        IF percentage < 75:
+            Add student to below_75 list
+
+    Write attendance percentage report
+    Write below_75 report
+    Write rejected_lines to error log
+
+END
+```

@@ -1,0 +1,19 @@
+**Alternative Concept:**
+
+Instead of raising and catching exceptions for invalid records, the program could use if statements to check the number of fields and attendance status before processing each line.
+
+**When bad lines are rare:**
+
+Exception handling can be convenient because the normal processing path remains simple. However, exceptions may involve additional overhead when errors occur.
+
+**When bad lines are common:**
+
+Using if statements for validation is generally more efficient because it avoids repeatedly raising and catching exceptions.
+
+**Time Complexity:**
+
+Both approaches have O(n) time complexity for processing n lines.
+
+**Space Complexity:**
+
+Both approaches require O(n) additional space if all rejected records are stored in a list. Otherwise, the extra space for validation can be O(1), excluding the attendance data structures.
